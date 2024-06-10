@@ -9,7 +9,7 @@ export const fetchMealsByName = async (name: string) => {
   } catch (error) {
     console.error("Error fetching meals by name:", error);
   }
-}; //Used in search bar
+}; 
 
 export const fetchRandomMeal = async () => {
   try {
@@ -18,7 +18,7 @@ export const fetchRandomMeal = async () => {
   } catch (error) {
     console.error("Error fetching meals by name:", error);
   }
-}; //used in fetching random component , in fetch button
+};
 
 export const fetchMealDetails = async (id: string) => {
   try {
@@ -27,7 +27,7 @@ export const fetchMealDetails = async (id: string) => {
   } catch (error) {
     console.error("Error fetching meals by name:", error);
   }
-}; // used when click on any meal in meallist component
+};
 
 export const fetchCategories = async () => {
   try {
@@ -36,7 +36,7 @@ export const fetchCategories = async () => {
   } catch (error) {
     console.error("Error fetching meals by name:", error);
   }
-}; // that used in sidebar to fetch categories
+}; 
 
 export const fetchFilterCategories = async (category: string) => {
   try {
@@ -46,4 +46,4 @@ export const fetchFilterCategories = async (category: string) => {
     console.error("Error fetching meals by name:", error);
   }
 };
-//Used in filter component
+

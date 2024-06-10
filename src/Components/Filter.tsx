@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const Filter: React.FC = () => {
   const navigate = useNavigate();
+  
   const filterMeals = useSelector((state: RootState) => state.meal.meals);
 
   const handleMealClick = (id: string) => {
@@ -22,7 +23,7 @@ const Filter: React.FC = () => {
           >
             <img
               src={meal.strMealThumb}
-              alt={meal.strMeal}
+              alt={meal?.strMeal}
               className="w-full h-48 object-cover"
             />
             <h3 className="text-xl mt-2">{meal.strMeal}</h3>
