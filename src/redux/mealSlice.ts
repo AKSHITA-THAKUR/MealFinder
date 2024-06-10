@@ -20,16 +20,13 @@ const initialState : MealState ={
 
 export const getMealsByName  = createAsyncThunk('meals/fetchByName', async (name:string)=>{
   const meals = await fetchMealsByName(name);
-  
   return meals;
 } );
 
-export const getFilterCategories = createAsyncThunk('meals/filterCategory' , async(category:string)=>{
+export const getFilterCategories = createAsyncThunk('meals/fetchFilterCategory' , async(category:string)=>{
   const meals = await fetchFilterCategories(category);
   return meals;
 })
-
-
 
 export const getRandomMeal = createAsyncThunk('meals/fetchRandom', async () => {
   const meal = await fetchRandomMeal();
