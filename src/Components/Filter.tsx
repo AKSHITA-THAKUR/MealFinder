@@ -14,11 +14,11 @@ const Filter: React.FC = () => {
 
   return (
     <React.Fragment>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-10 ">
         {filterMeals.map((meal) => (
           <div
             key={meal.idMeal}
-            className="border rounded p-4 m-3 "
+            className="border rounded p-4 m-3 hover:scale-125 duration-300"
             onClick={() => handleMealClick(meal.idMeal)}
           >
             <img

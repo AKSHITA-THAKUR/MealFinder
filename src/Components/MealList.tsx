@@ -22,7 +22,7 @@ const MealList: React.FC = () => {
 				{meals.map((meal) => (
 					<div
 						key={meal.idMeal}
-						className="border rounded p-4 m-3 "
+						className="border-2 border-gray rounded p-4 m-3 bg-white-100 hover:scale-125 duration-300 cursor-pointer "
 						onClick={() => handleMealClick(meal.idMeal)}
 					>
 						<img

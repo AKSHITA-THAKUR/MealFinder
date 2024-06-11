@@ -36,7 +36,7 @@ const MealDetails: React.FC = () => {
 	return (
 		<div className="container mx-auto p-4">
 			<div className="bg-white rounded-lg shadow-lg p-6">
-				<h2 className="text-2xl font-bold mb-4">
+				<h2 className="text-2xl font-bold mb-4 font-serif">
 					{mealDetails.strMeal}
 				</h2>
 				<div className="rounded-lg overflow-hidden mb-4">

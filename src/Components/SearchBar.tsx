@@ -20,14 +20,14 @@ const SearchBar: React.FC = () => {
 
 	return (
 		<div>
-			<header className="bg-gray-800 p-4 flex justify-between items-center w-full bg-gradient-to-r from-red-700 via-orange-400 to-yellow-400 border-black border-2 mb-1">
+			<header className=" p-4 flex justify-between items-center w-full bg-gradient-to-r from-red-600  to-yellow-400 border-black border-2 mb-1 rounded-xl focus:text-red-950">
 
 				<form className="flex-1 max-w-md mx-auto">
 					<div className="relative">
 						<input
 							type="search"
 							id="default-search"
-							className="block w-full p-4 pr-32 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+							className="block w-full p-4 pr-32 text-sm text-gray-900 border border-gray-700 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 							placeholder="Search Meals here..."
 							value={query}
 							onChange={(e) => setQuery(e.target.value)}
